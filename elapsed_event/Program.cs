@@ -15,4 +15,9 @@ public class Program
         Console.WriteLine("Press Any Key to Exit else Elapsed Event will be Raised ");
         Console.ReadLine();
     }
+
+    private static void OnTimedEvent(object source, ElapsedEventArgs e)
+    {
+        Console.WriteLine("The Elapsed event was Raised {0}", e.SignalTime);
+    }
 }
